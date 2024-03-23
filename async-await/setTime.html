@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async-Await</title>
+</head>
+<body>
+    <h1>JavaScript Recent Part</h1>
+
+    <button>stop</button>
+
+    <script>
+    //  document.querySelector("h1").innerHTML = "Async JavaScript"
+
+     let changeing = setTimeout(function(){
+     document.querySelector("h1").innerHTML = "Async JavaScript"
+
+     },2000)
+
+     document.querySelector("button").addEventListener("click",function(){
+        clearTimeout(changeing)
+     })
+
+    </script>
+</body>
+</html>

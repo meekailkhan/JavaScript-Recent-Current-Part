@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInteraval</title>
+</head>
+<body>
+    <h1>JavaScript Recent Part</h1>
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+
+    <script>
+        let runing = setInterval(function(){
+            console.log("meekail");
+            console.log("aslam")
+        },1500)
+
+        document.querySelector("#stop").addEventListener("click",function(){
+            clearInterval(runing)
+        })
+        document.querySelector("#start").addEventListener("click",function(){
+            runing = setInterval(function(){
+            console.log("meekail");
+            console.log("aslam")
+        },1500)
+        })
+
+    </script>
+
+</body>
+</html>
